@@ -26,6 +26,7 @@ for folder in GCA_*; do
 done
 
 # Change file name in assembly folder
+cd assembly
 for file in GCA_*.fna; do 
     mv "$file" "$(echo "$file" | cut -d'_' -f1-2).fna"
 done
